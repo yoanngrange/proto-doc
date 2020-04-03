@@ -1,55 +1,104 @@
-
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #393939;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+a, h2 button.btn-link {
+    color: #007F91;
 }
-/* Style the header */
+
+article h2 button.btn-link{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+h5.card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+a:hover, h2 button.btn-link:hover {
+    color: #17545A;
+}
+
+.badge-abtasty {
+    background-color: #007F91;
+    color: #FFFFFF;
+}
 
 header {
-    background-color: #666;
+    background-color: #007F91;
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: white;
 }
-/* Container for flexboxes */
+
+header h2 {
+    color: #57B8C7;
+}
 
 section {
     display: -webkit-flex;
     display: flex;
 }
-/* Style the navigation menu */
 
 nav {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    background: #ccc;
+    background: #E1E1E1;
     padding: 20px;
 }
-/* Style the list inside the menu */
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+nav .sticky {
     position: -webkit-sticky;
-    /* Safari */
     position: sticky;
     top: 30px;
 }
-/* Style the content */
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 0 0 20px;
+    line-height: 0.85rem;
+    list-style: none;
+}
+
+nav ul li::before {
+    content: "\2022";
+    color: #007F91;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+nav ul li a {
+    font-size: 0.65rem;
+}
 
 article {
     -webkit-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    background-color: #f1f1f1;
+    background-color: #FFFFFF;
     padding: 40px;
 }
-/* Style the footer */
+
+article h1 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+article h1 span.badge {
+    font-weight: 400;
+    font-size: 1rem;
+    vertical-align: middle;
+}
 
 footer {
     background-color: #777;
@@ -57,7 +106,14 @@ footer {
     text-align: center;
     color: white;
 }
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+
+footer p {
+    font-size: 0.8rem;
+}
+
+footer p a {
+    color: #F7F7F7;
+}
 
 @media (max-width: 600px) {
     section {

@@ -1,27 +1,29 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #9381da;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-/* Style the header */
 
 header {
-    background-color: #666;
+    background-color: #9381da;
     padding: 30px;
     text-align: center;
     font-size: 35px;
     color: white;
 }
-/* Container for flexboxes */
 
 section {
     display: -webkit-flex;
     display: flex;
 }
-/* Style the navigation menu */
 
 nav {
     -webkit-flex: 1;
@@ -41,7 +43,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
 }
-/* Style the content */
 
 article {
     -webkit-flex: 3;
@@ -50,7 +51,6 @@ article {
     background-color: #f1f1f1;
     padding: 40px;
 }
-/* Style the footer */
 
 footer {
     background-color: #777;
