@@ -52,6 +52,10 @@ nav {
     padding: 20px;
 }
 
+article .card-header {
+    background-color: #F7F7F7;
+}
+
 nav .sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -116,7 +120,7 @@ article {
 }
 
 article img.demo {
-    border: 1px solid #007F91;
+    border: 3px solid #007F91;
 }
 
 article h1 {
@@ -147,7 +151,7 @@ footer p a {
 
 @media (max-width: 600px) {
     section {
-        -webkit-flex-direction: column;
-        flex-direction: column;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 }
