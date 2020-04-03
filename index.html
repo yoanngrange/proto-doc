@@ -100,7 +100,7 @@
             </div>
          </nav>
          <article>
-            <p class="text-right">Latest update: <time datetime="2020-03-17T09:28:48Z">March 17th 2020</p>
+            <p class="text-right">Latest update: <time datetime="2020-03-17T09:28:48Z">April 4th 2020</p>
             <h1>Social Proof <span class="badge badge-abtasty">Widget</span></h1>
             
                 <div class="accordion" id="socialProofAccordion">
@@ -114,7 +114,13 @@
                         </div>
                         <div id="collapseArticleZero" class="collapse" aria-labelledby="socialProofDemo">
                           <div class="card-body">
-                            <img class="lazy img-fluid" src="img/placeholder.png" data-src="img/now.gif" data-srcset="img/now.gif 1x" alt="">
+                            <p>Let's use a Social Proof widget to display the number of views of a blog post on the last 24 hours.</p>
+                            <img class="lazy demo img-fluid" src="img/social-proof/placeholder.png" data-src="img/social-proof/now.gif" data-srcset="img/social-proof/now.gif 1x" alt="">
+                            <!--<br>
+                            <br>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/C71YkqN0pEA?rel=0" allowfullscreen></iframe>
+                            </div>-->
                           </div>
                         </div>
                       </div>
@@ -131,23 +137,23 @@
                             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                                 <div class="col mb-4">
                                   <div class="card">
-                                    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+                                    <img src="img/use-cases/decathlon.jpg" class="card-img-top">
                                     <div class="card-body">
-                                      <h5 class="card-title">Camaïeu</h5>
+                                      <h5 class="card-title">Decathlon</h5>
                                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     </div>
                                   </div>
                                 </div>
                                 <div class="col mb-4">
-                                    <img src="https://via.placeholder.com/300x200" class="card-img-top">
+                                    <img src="img/use-cases/nyx.jpg" class="card-img-top">
                                   <div class="card">
                                     <div class="card-body">
-                                      <h5 class="card-title">Axa</h5>
+                                      <h5 class="card-title">Nyx</h5>
                                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     </div>
                                   </div>
                                 </div>
-                                <div class="col mb-4">
+                                <!--<div class="col mb-4">
                                   <div class="card">
                                     <img src="https://via.placeholder.com/300x200" class="card-img-top">
                                     <div class="card-body">
@@ -155,8 +161,11 @@
                                       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                                     </div>
                                   </div>
-                                </div>
+                                </div>-->
                             </div>
+                            <p><button type="button" class="btn btn-outline-abtasty btn-lg">View all use cases</button></p>
+                            <br>
+                            <hr>
                             <br>
                             <h3>When to use it?</h3>
                             <p>The Social Proof widget displays a message to your visitors, specifying the number of views or purchases for a specific page over a period.</p>
@@ -179,15 +188,16 @@
                         <div class="card-body">
                             
 
-                            <p>For views:</p>
+                            <h3>For views</h3>
                             <ul>
                                 <li>Implement AB Tasty tag</li>
                                 <li>One URL per page</li>
                             </ul>
 
-                            <p>For purchases:</p>
+                            <h3>For purchases</h3>
                             <ul>
-                                <li>Implement AB Tasty Transaction tag</li>
+                                <li>Implement AB Tasty tag</li>
+                                <li>Implement AB Tasty Transaction tag on confirmation page</li>
                                 <li>Product id in dataLayer or in DOM</li>
                                 <li>One URL per product</li>
                                 <li>Define the window.ABTastyProductKey variable</li>
@@ -222,32 +232,13 @@
                                     <li>
                                         <!--<pre>function setABTastyProductKey() {<br /><br />if (typeof YOURDATALAYER !== "undefined") { /* Set YOURDATALAYER variable with the correct name */<br /><br /> window.ABTastyProductKey = YOURDATALAYER.ITEMSKUKEY; /* Set YOURDATALAYER.ITEMSKUKEY variable with the correct path. */<br /><br />} else {<br /><br /> setTimeout(setABTastyProductKey);<br /><br />}<br /><br />}<br /><br />setABTastyProductKey();</pre>-->
                                     </li>
-                                    <li>
-                                        Adapt it to suit the values specific to your website.<br />
-                                        <!--<table>
-                                            <tbody>
-                                            <tr>
-                                                <td><img src="/hc/fr/article_attachments/218021027/eclair.png" alt="" width="56" height="52" /></td>
-                                                <td>
-                                                    <p>The value you define in the <em>window.ABTastyPoductKey </em>variable must be the same as the <em>item code</em> (product SKU) located in the <em>Item</em> hit. </p>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                            </table>-->
-                                    </li>
+                                    <li>Adapt it to suit the values specific to your website.<br />The value you define in the <em>window.ABTastyPoductKey </em>variable must be the same as the <em>item code</em> (product SKU) located in the <em>Item</em> hit.</li>
                                     <li>Go to the editor of the campaign on which you want to configure the Social Proof widget.</li>
                                     <li>Go to the Add JavaScript window and paste the code.</li>
                                 </ol>
-                                <!--<table>
-                                    <tbody>
-                                    <tr>
-                                        <td><img src="/hc/fr/article_attachments/206687118/FontAwesome_f0a4_1__512.png" alt="" width="56" height="52" /></td>
-                                        <td>
-                                            <p>We recommend implementing the code directly in the editor of the campaign rather than in the global code of the website, as this code is only necessary for pages using the Social Proof widget. </p>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                    </table>-->
+                                
+                                <p>We recommend implementing the code directly in the editor of the campaign rather than in the global code of the website, as this code is only necessary for pages using the Social Proof widget. </p>
+                                        
                                 <h3>Installing the transaction tag</h3>
                                 <p>AB Tasty lets you save <a href="/hc/en-us/articles/360034533374#h_149f2e90-924c-486d-8a72-1b5544772286" target="_self" rel="noopener">the data related to transactions</a>made on your website (e.g. transaction amounts, payment methods, number of items purchased, etc.), along with <a href="#h_ebde627b-aa9f-4576-85ed-e8fbaf9e8ed6" target="_self">information related to the purchased items</a>(average cart value, item price, etc.).</p>
                                 <p>This data is available in the reports of each campaign in the form of indicators or filters. For more on this, refer to <a href="/hc/en-us/articles/360035058613" target="_blank" rel="noopener">New reporting: transaction indicators and e-commerce data</a>.</p>
@@ -266,16 +257,9 @@
                                 <p>The transaction tag features two parts: the first enables the transmission of <a href="#h_149f2e90-924c-486d-8a72-1b5544772286" target="_self">information related to the transaction</a>(ID, name, amount, delivery fees, etc.) and the second enables the transmission of <a href="#h_ebde627b-aa9f-4576-85ed-e8fbaf9e8ed6" target="_self">item or product details</a> related to purchases made by customers visiting your website.</p>
                                 <h2>Transaction settings</h2>
                                 <p>The transaction settings coincide with the general information related to a purchase. If necessary, this information can be enriched with <a href="#h_ebde627b-aa9f-4576-85ed-e8fbaf9e8ed6" target="_self">settings related to items</a>.</p>
-                                <!--<table>
-                                    <tbody>
-                                    <tr>
-                                        <td><img src="/hc/fr/article_attachments/218021027/eclair.png" alt="" width="56" height="52" /></td>
-                                        <td>
+                                
                                             <p>The tid, ta, tr and icn settings must be declared during transaction tag implementation. The other settings are optional, however we recommend configuring them also in order to be able to apply the matching filters in the reports later on. </p>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                    </table>-->
+                                
                                 <!--<table>
                                     <tbody>
                                     <tr>
@@ -361,16 +345,12 @@
                                 <p>For more on the JavaScript implementation of transaction settings, please refer to our <a href="https://developers.abtasty.com/universal-collect.html?javascript#transaction" target="_blank" rel="noopener">developer documentation</a>.</p>
                                 <h2>Item-specific settings</h2>
                                 <p>Information related to the purchased items can be linked to each transaction. In order to do this, you need to configure the &ldquo;item&rdquo; section of the transaction tag using the settings below in addition to <a href="#h_149f2e90-924c-486d-8a72-1b5544772286" target="_self">those related to the transaction</a>.</p>
-                                <!--<table>
-                                    <tbody>
-                                    <tr>
-                                        <td><img src="/hc/fr/article_attachments/218021027/eclair.png" alt="" width="56" height="52" /></td>
-                                        <td>
-                                            <p>The tid and in settings must be declared. In particular, the tid setting must match the one declared for the main transaction. </p>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                    </table>-->
+                               
+                                <p>The tid and in settings must be declared. In particular, the tid setting must match the one declared for the main transaction. </p>
+                                        
+                                    
+                                    
+                                    
                                 <!--<table>
                                     <tbody>
                                     <tr>
@@ -431,16 +411,12 @@
                                 <p>The best way to implement the transaction tag is within the source code of your website&rsquo;s purchase confirmation page. You can use the code template provided below.</p>
                                 <p>To implement the transaction tag, apply the following steps:</p>
                                 <p>1. Copy all of the code below and paste it into your confirmation page.</p>
-                                <!--<table>
-                                    <tbody>
-                                    <tr>
-                                        <td><img src="/hc/fr/article_attachments/206687118/FontAwesome_f0a4_1__512.png" alt="" width="56" height="52" /></td>
-                                        <td>
+                                
                                             <p>This is the generic transaction tag and the variables are specific to your website. </p>
                                         </td>
                                     </tr>
                                     </tbody>
-                                    </table>-->
+                                    </table>
                                 <!--<pre>// transaction tag<br />&lt;script&gt;<br />window.abtasty.send(&ldquo;transaction&rdquo;, {<br /> tid: __TRANSACTION_ID__, // Format: STRING, value example: &ldquo;OD564"<br /> ta: __TRANSACTION_NAME__, // Format: STRING, value example: &ldquo;Purchase&rdquo;<br /> tr: __TRANSACTION_REVENUE__, // Format: FLOAT, value example: 15.47<br /> ts: __TRANSACTION_SHIPPING__, // Format: FLOAT, value example: 3.5<br /> tt: __TRANSACTION_TAXES__, // Format: FLOAT, value example: 2.60<br /> tc: __TRANSACTION_CURRENCY__, // Format: STRING, value example: &ldquo;EUR&rdquo; <br /> tcc: __TRANSACTION_COUPON_CODE__, // Format: STRING, value example: &ldquo;Coupon&rdquo;<br /> pm: __TRANSACTION_PAYMENT_METHOD__, // Format: STRING, value example: &ldquo;Paypal&rdquo;<br /> sm: __TRANSACTION_SHIPPING_METHOD__, // Format: STRING, value example: &ldquo;Fedex&rdquo;<br /> icn: __TRANSACTION_ITEM_COUNT_NUMBER__ // Format: INTEGER, value example: 12<br />});<br />&lt;/script&gt;</pre>
                                     <pre>// transaction items tag<br />&lt;script&gt;<br />window.abtasty.send(&ldquo;item&rdquo;, {<br /> &ldquo;tid&rdquo;: __TRANSACTION_ID__, // Format: STRING, value example: &ldquo;OD564&rdquo;<br /> &ldquo;in&rdquo;: __TRANSACTION_ITEMS[i].ITEM_NAME__, // Format: STRING, value example: &ldquo;Shoe&rdquo;<br /> &ldquo;ip&rdquo;: __TRANSACTION_ITEMS[i].ITEM_PRICE__, // Format: FLOAT, value example: 3.5<br /> &ldquo;iq&rdquo;: __TRANSACTION_ITEMS[i].ITEM_QUANTITY__, // Format: INTEGER, value example: 4<br /> &ldquo;ic&rdquo;: __TRANSACTION_ITEMS[i].ITEM_CODE__, // Format: STRING, value example: &ldquo;SKU47&rdquo;<br /> &ldquo;iv&rdquo;: __TRANSACTION_ITEMS[i].ITEM_CATEGORY__ // Format: STRING, value example: &ldquo;Blue&rdquo;<br />});<br />&lt;/script&gt;</pre>-->
                                 <p>2. Replace the __TRANSACTION_XXX__values with your own data, available in your source code or datalayer.</p>
@@ -545,7 +521,7 @@
                         <div id="collapseArticleFour" class="collapse" aria-labelledby="socialProofQa">
                           <div class="card-body">
                             <h1 title="QA the Social Proof widget">QA the Social Proof widget</h1>
-                            <img class="lazy img-fluid" src="img/placeholder.png" data-src="img/now.gif" data-srcset="img/now.gif 1x" alt="">
+                            <img class="lazy img-fluid" src="img/social-proof/placeholder.png" data-src="img/social-proof/now.gif" data-srcset="img/social-proof/now.gif 1x" alt="">
                             <p>The Social Proof widget enables you to display a message for your visitors, specifying the number of views or purchases for a specific product or page within a preset time period.</p>
                             <p>To collect the number of transactions for a specific product and display it via the Social Proof widget, you must implement the <a href="/hc/en-us/articles/360011600860" target="_blank" rel="noopener">Item hit as well as the transaction tag</a>.</p>
                             <p>Once the Social Proof widget is implemented and configured on your website, you can run the QA process. This way, you can ensure that the widget properly displays the number of views or the number of transactions (according to your configuration) for a specific product on the right product page.</p>
@@ -578,25 +554,6 @@
                             <p>For instance, if you want to display the number of views for a specific product within the last 24 hours, you must check that the number displayed in the popin is the same as the number that matches the <em>count_24hours</em> line in the console.</p>
                             <p>If the widget is properly displayed after running the QA process, some issues may remain. For instance, there may be an issue with the collection of product-related transactions.</p>
                                         
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-header" id="socialProofExample">
-                          <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseArticleFive" aria-expanded="false" aria-controls="collapseArticleFive">
-                              Example in video
-                            </button>
-                          </h2>
-                        </div>
-                        <div id="collapseArticleFive" class="collapse" aria-labelledby="socialProofExample">
-                          <div class="card-body">
-                            <h2>Example</h2>
-            
-                            <p>Let's use a Social Proof widget to display the number of views of a blog post on the last 24 hours.</p>
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                            </div>
                           </div>
                         </div>
                       </div>
